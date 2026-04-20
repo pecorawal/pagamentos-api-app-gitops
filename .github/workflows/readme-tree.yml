@@ -4,27 +4,22 @@ on:
   push:
     branches:
       - main
+    paths-ignore:
+      - 'README.md'
   workflow_dispatch:
+
+permissions:
+  contents: write
 
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
       - uses: actions/checkout@v4
 
       - name: Generate README Tree
         uses: RavelloH/readme-tree@latest
-        with:
-          # O caminho para o diretório raiz do seu projeto. Padrão é '.' (raiz do repositório).
-          base-path: '.'
-          # O caminho para o arquivo README.md onde a árvore será inserida.
-          readme-path: 'README.md'
-          # O marcador onde a árvore será inserida. Certifique-se de que este marcador exista no seu README.md.
-          marker: '<!-- TREE -->'
-          # Excluir arquivos/diretórios específicos (opcional).
-          # ignore: 'node_modules|.git'
-          # Incluir apenas arquivos/diretórios específicos (opcional).
-          # include: 'src|docs'
 
       - name: Commit and Push changes
         uses: EndBug/add-and-commit@v9
@@ -33,3 +28,4 @@ jobs:
           author_email: actions@github.com
           message: 'docs: generate README tree'
           add: 'README.md'
+        continue-on-error: true
