@@ -4,7 +4,10 @@
 Com essa aplicação é possível gerar um pipeline de CI/CD (Continuous Integration/Continuous Deployment)
 
 
-<!-- TREE -->
+<!-- readme-tree start -->
+
+
+<!-- readme-tree end -->
 
 
 Observando a árvore temos o código fonte em NodeJs na raiz do repositório.

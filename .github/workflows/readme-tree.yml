@@ -13,7 +13,7 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Generate README Tree
-        uses: kittaakos/readme-tree-action@v1.0.0
+        uses: RavelloH/readme-tree@latest
         with:
           # O caminho para o diretório raiz do seu projeto. Padrão é '.' (raiz do repositório).
           base-path: '.'
