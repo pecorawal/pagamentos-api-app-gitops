@@ -17,7 +17,7 @@ A aplicação **pagamentos-api** é uma aplicação que simula o backend de uma 
 │   ├── 01-git-task-pagamentos-api.yaml
 │   ├── 02-update-gitops-task.yaml
 │   ├── 03-rbac.sh
-│   └── 04-pipeline-pagamentos-v2.yaml
+│   └── 04-pipeline-pagamentos.yaml
 ├── package.json
 ├── server.js
 └── tree.bak
