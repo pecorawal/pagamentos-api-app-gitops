@@ -5,8 +5,26 @@ Com essa aplicação é possível gerar um pipeline de CI/CD (Continuous Integra
 
 
 <!-- readme-tree start -->
+```
+.
+├── .github
+│   └── workflows
+│       └── readme-tree.yml
+├── .gitignore
+├── Dockerfile
+├── README.md
+├── ci
+│   ├── 00-gitops-token-es.yaml
+│   ├── 01-git-task-pagamentos-api.yaml
+│   ├── 02-update-gitops-task.yaml
+│   ├── 03-rbac.sh
+│   └── 04-pipeline-pagamentos-v2.yaml
+├── package.json
+├── server.js
+└── tree.bak
 
-
+4 directories, 12 files
+```
 <!-- readme-tree end -->
 
 
