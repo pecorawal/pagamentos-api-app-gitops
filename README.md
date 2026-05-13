@@ -1,4 +1,4 @@
-# Aplicacao nodeJS com API de Simulação de Pagamentos
+# Backend nodeJS API de Simulação de Pagamentos
 
 A aplicação **pagamentos-api** é uma aplicação que simula o backend de uma aplicação recebendo a camada de negócios.  O funcionamento é bastante simples e foca na demonstração de um pipeline completo de CI/CD (Continuous Integration/Continuous Deployment). Sob o ponto de vista de funcionamento do código, essa aplicação receberá chamadas da aplicação de **checkout-frontend** em seu respectivo repositório e simulará uma transação com sucesso gerando um número de transação.
 
